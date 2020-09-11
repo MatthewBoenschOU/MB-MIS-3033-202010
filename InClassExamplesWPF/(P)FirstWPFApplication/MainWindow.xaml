@@ -1,0 +1,23 @@
+﻿<Window x:Class="_P_FirstWPFApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_P_FirstWPFApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF000047" Offset="0.112"/>
+                <GradientStop Color="Red" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="LblName" Content="Please Enter Your Name" HorizontalAlignment="Left" Height="37" Margin="31,125,0,0" VerticalAlignment="Top" Width="173" Foreground="White"/>
+        <Label x:Name="LblBirthDate" Content="Please Enter Your Birth Date" HorizontalAlignment="Left" Height="37" Margin="31,180,0,0" VerticalAlignment="Top" Width="173" Foreground="White"/>
+        <TextBox x:Name="TxtBxName" HorizontalAlignment="Left" Margin="204,125,0,0" Text="Enter Name Here" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="37" Background="White" MouseEnter="TxtBxName_MouseEnter" MouseLeave="TxtBxName_MouseLeave"/>
+        <TextBox x:Name="TxtBxBirthDate" HorizontalAlignment="Left" Margin="204,180,0,0" Text="__/__/____" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="37" Background="White" MouseEnter="TxtBxBirthDate_MouseEnter"/>
+        <Button x:Name="BttnAgeCalc" Content="Calculate Age" HorizontalAlignment="Left" Height="54" Margin="356,144,0,0" VerticalAlignment="Top" Width="130" Background="#FFC98989" MouseEnter="BttnAgeCalc_MouseEnter" Click="BttnAgeCalc_Click"/>
+
+    </Grid>
+</Window>
