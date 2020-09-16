@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroToWPFAttempt2", "Intro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV", "CSV\CSV.csproj", "{97BB4323-7EFF-4609-BFE5-C96E0D5B571F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGET", "NuGET\NuGET.csproj", "{CE47E69F-1754-46D0-91EE-4145DD19CA39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{97BB4323-7EFF-4609-BFE5-C96E0D5B571F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97BB4323-7EFF-4609-BFE5-C96E0D5B571F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97BB4323-7EFF-4609-BFE5-C96E0D5B571F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE47E69F-1754-46D0-91EE-4145DD19CA39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE47E69F-1754-46D0-91EE-4145DD19CA39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE47E69F-1754-46D0-91EE-4145DD19CA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE47E69F-1754-46D0-91EE-4145DD19CA39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
