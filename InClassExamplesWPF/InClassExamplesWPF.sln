@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV", "CSV\CSV.csproj", "{9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGET", "NuGET\NuGET.csproj", "{CE47E69F-1754-46D0-91EE-4145DD19CA39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RickAndMorty", "RickAndMorty\RickAndMorty.csproj", "{B4335E7C-7EC3-4690-8D11-915E42AA0693}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CE47E69F-1754-46D0-91EE-4145DD19CA39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE47E69F-1754-46D0-91EE-4145DD19CA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE47E69F-1754-46D0-91EE-4145DD19CA39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4335E7C-7EC3-4690-8D11-915E42AA0693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4335E7C-7EC3-4690-8D11-915E42AA0693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4335E7C-7EC3-4690-8D11-915E42AA0693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4335E7C-7EC3-4690-8D11-915E42AA0693}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

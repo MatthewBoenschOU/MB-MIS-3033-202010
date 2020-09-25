@@ -26,8 +26,13 @@ namespace WPFClasses2
         
         public string GetAisle()
         {
-            string AName = $"{Manufacturer.Substring(0, 1).ToUpper()}{Price.ToString()}";
+            string AName = $"{Manufacturer.Substring(0, 1).ToUpper()}{Price}";
             return AName;
+        }
+        public override string ToString()
+        {
+            return GetAisle();
+
         }
     }
 }

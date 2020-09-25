@@ -27,48 +27,27 @@ namespace WPFClasses2
 
         private void BttnAdd_Click(object sender, RoutedEventArgs e)
         {
-            double n;
-            bool IsDouble = double.TryParse(TxtBxPrice.Text, out n);
-            string GoodToGo1 = "";
-            string GoodToGo2 = "";
-            string GoodToGo3 = "";
-            bool AllGood = true;
             
-
-            do
-            {
+            bool IsDouble = double.TryParse(TxtBxPrice.Text, out double n);
+                                    
                 if (TxtBxName.Text == "")
                 {
                     MessageBox.Show("Please Enter A Valid Toy Name");
-                    GoodToGo1 = "n";
+                    
                     TxtBxName.Text = "Please Enter The Toys Name";
-                }
-                else
-                {
-                    GoodToGo1 = "y";
-                }
+                }               
                 if (TxtBxManufacturer.Text == "")
                 {
                     MessageBox.Show("Please Enter A Valid Manufacturer Name");
-                    GoodToGo2 = "n";
+                    
                     TxtBxManufacturer.Text = "Please Enter The Manufacturer Of The Toy";
-                }
-                else
-                {
-                    GoodToGo2 = "y";
-                }
+                }               
                 if (IsDouble == false)
                 {
                     MessageBox.Show("Please Enter A Valid Price");
-                    GoodToGo3 = "n";
-                    TxtBxPrice.Text = "Please Enter The Price Of The Toy";
+                                       
                 }
-                else
-                {
-                    GoodToGo3 = "y";
-                }
-            } while (AllGood == false);
-            
+                                                
 
             Toy NewToy = new Toy();
             NewToy.Name = TxtBxName.Text;
@@ -87,7 +66,9 @@ namespace WPFClasses2
         private void LBToys_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Toy LBToy = (Toy)LBToys.SelectedItem;
+
             MessageBox.Show($"{LBToy.GetAisle()}");
+             
         }
     }
 }
