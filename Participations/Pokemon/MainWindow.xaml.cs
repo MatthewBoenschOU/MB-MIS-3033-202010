@@ -60,9 +60,12 @@ namespace Pokemon
                 Size = JsonConvert.DeserializeObject<Stats>(JSONOutput);
                 TxtBxH.Text = Convert.ToString(Size.height);
                 TxtBxW.Text = Convert.ToString(Size.weight);
-                ImgFront.Source = new BitmapImage(new Uri(Size.sprites.front_default));   
-                              
+                var UriF = new Uri(Size.sprites.front_default);
+                var FSprite = new BitmapImage(UriF);
+                ImgFront.Source = FSprite;            
             }
+            
+
             
 
 
@@ -74,6 +77,8 @@ namespace Pokemon
             string Starter = CBPokeName.SelectedItem.ToString();
             Stats Size = new Stats();
             Size.Url = @"https://pokeapi.co/api/v2/pokemon/" + Starter.ToLower();
+            
+            
 
             using (var Client = new HttpClient())
             {
@@ -81,10 +86,12 @@ namespace Pokemon
                 Size = JsonConvert.DeserializeObject<Stats>(JSONOutput);
                 TxtBxH.Text = Convert.ToString(Size.height);
                 TxtBxW.Text = Convert.ToString(Size.weight);
-                ImgBack.Source = new BitmapImage(new Uri(Size.sprites.back_default));
-
+                var UriB = new Uri(Size.sprites.back_default);
+                var BSprite = new BitmapImage(UriB);
+                ImgBack.Source = BSprite;
             }
             ImgFront.IsEnabled = false;
+            
 
 
         }
