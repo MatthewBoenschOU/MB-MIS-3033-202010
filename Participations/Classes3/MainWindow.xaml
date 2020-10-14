@@ -1,0 +1,26 @@
+﻿<Window x:Class="Classes3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Classes3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXlzZgLkmgQgnN2w_zzerUfKpxV5y3BQYYug&amp;usqp=CAU"/>
+        </Grid.Background>
+        <TextBox x:Name="TxtBxFirstname" HorizontalAlignment="Left" Height="23" Margin="10,74,0,0" TextWrapping="Wrap" Text="Please Enter Your First Name" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="TxtBxLastName" HorizontalAlignment="Left" Height="23" Margin="10,102,0,0" TextWrapping="Wrap" Text="Please Enter Your Last Name" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="TxtBxMajor" HorizontalAlignment="Left" Height="23" Margin="10,130,0,0" TextWrapping="Wrap" Text="Please Enter Your Major" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="TxtBxGPA" HorizontalAlignment="Left" Height="23" Margin="10,158,0,0" TextWrapping="Wrap" Text="Please Enter Your GPA" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="TxtBxStreetNumber" HorizontalAlignment="Left" Height="23" Margin="10,227,0,0" TextWrapping="Wrap" Text="Please Enter Your Street Number" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="TxtBxCity" HorizontalAlignment="Left" Height="23" Margin="10,311,0,0" TextWrapping="Wrap" Text="Please Enter Your City" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="TxtBxState" HorizontalAlignment="Left" Height="23" Margin="10,283,0,0" TextWrapping="Wrap" Text="Please Enter Your State" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="TxtBxStreetName" HorizontalAlignment="Left" Height="23" Margin="10,255,0,0" TextWrapping="Wrap" Text="Please Enter Your Street Name" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="TxtBxZipCode" HorizontalAlignment="Left" Height="23" Margin="10,339,0,0" TextWrapping="Wrap" Text="Please Enter Your Zip Code" VerticalAlignment="Top" Width="181"/>
+        <ListBox x:Name="LB" HorizontalAlignment="Left" Height="126" Margin="385,283,0,0" VerticalAlignment="Top" Width="397" SelectionChanged="LB_SelectionChanged"/>
+        <Button x:Name="BttnAddToLB" Content="Add" HorizontalAlignment="Left" Margin="39,367,0,0" VerticalAlignment="Top" Width="116" Height="46" Click="BttnAddToLB_Click"/>
+
+    </Grid>
+</Window>

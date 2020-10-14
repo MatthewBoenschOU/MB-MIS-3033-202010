@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon", "Pokemon\Pokemon.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChuckNorris", "ChuckNorris\ChuckNorris.csproj", "{79EA6361-6138-4823-80F5-629315A927F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes3", "Classes3\Classes3.csproj", "{D994F21B-364A-4662-B243-D899A21BC93E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{79EA6361-6138-4823-80F5-629315A927F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79EA6361-6138-4823-80F5-629315A927F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79EA6361-6138-4823-80F5-629315A927F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D994F21B-364A-4662-B243-D899A21BC93E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D994F21B-364A-4662-B243-D899A21BC93E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D994F21B-364A-4662-B243-D899A21BC93E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D994F21B-364A-4662-B243-D899A21BC93E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
