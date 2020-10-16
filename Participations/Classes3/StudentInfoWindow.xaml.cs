@@ -19,20 +19,21 @@ namespace Classes3
     /// </summary>
     public partial class StudentInfoWindow : Window
     {
-        public Address sp { get; set; }
+        
         public StudentInfoWindow()
         {
             InitializeComponent();
         }
-        public void Setup()
+        public void PopUpWindow(Student Stud)
         {
-            var SelectedStudent = sp;
-            LblStreetNum.Content = sp.StreetNumber;
-            LblStreetName.Content = sp.StreetName;
-            LblState.Content = sp.State;
-            LblCity.Content = sp.City;
-            LblZip.Content = sp.Zipcode;
-            
+
+            string ShowName = $"{Stud.LastName} {Stud.FirstName}";
+            LblStudentName.Content = ShowName;
+
+            string ShowAddress = $"{Stud.Address.StreetNumber} {Stud.Address.StreetName}, {Stud.Address.City}, {Stud.Address.State}. {Stud.Address.Zipcode}";
+            LblAddressInfo.Content = ShowAddress;
+
+
 
         }
     }

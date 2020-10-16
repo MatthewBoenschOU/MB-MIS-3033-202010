@@ -23,15 +23,12 @@ namespace Classes3
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void LB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var SelectedStudent = (Address)LB.SelectedItem;
-            StudentInfoWindow InfoWindow = new StudentInfoWindow();
-            InfoWindow.sp = SelectedStudent;
-            InfoWindow.Setup();
-            InfoWindow.Show();
+            
         }
 
         private void BttnAddToLB_Click(object sender, RoutedEventArgs e)
@@ -79,7 +76,14 @@ namespace Classes3
                 MessageBox.Show("Please Enter A Valid GPA");
             }
 
+                       
 
+            Student NewStudent = new Student();
+            NewStudent.FirstName = TxtBxFirstname.Text;
+            NewStudent.LastName = TxtBxLastName.Text;
+            NewStudent.Major = TxtBxMajor.Text;
+            NewStudent.GPA = Convert.ToDouble(TxtBxGPA.Text);
+            NewStudent.SetAddress(Convert.ToInt32(TxtBxStreetNumber.Text), TxtBxStreetName.Text, TxtBxState.Text, TxtBxCity.Text, Convert.ToInt32(TxtBxZipCode.Text));
 
             Address NewAddress = new Address();
             NewAddress.StreetNumber = Convert.ToInt32(TxtBxStreetNumber.Text);
@@ -87,12 +91,6 @@ namespace Classes3
             NewAddress.State = TxtBxState.Text;
             NewAddress.City = TxtBxCity.Text;
             NewAddress.Zipcode = Convert.ToInt32(TxtBxZipCode.Text);
-
-            Student NewStudent = new Student();
-            NewStudent.FirstName = TxtBxFirstname.Text;
-            NewStudent.LastName = TxtBxLastName.Text;
-            NewStudent.Major = TxtBxMajor.Text;
-            NewStudent.GPA = Convert.ToDouble(TxtBxGPA.Text);
 
             TxtBxStreetNumber.Text = "Please Enter Your Street Number";
             TxtBxStreetName.Text = "Please Enter Your Street Name";
@@ -104,9 +102,20 @@ namespace Classes3
             TxtBxMajor.Text = "Please Enter Your Major";
             TxtBxGPA.Text = "Please Enter Your GPA";
 
+            
 
 
-            LB.Items.Add($"{NewStudent.ToString()}");
+
+            LB.Items.Add(NewStudent);
+        }
+
+        private void LB_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var SelectedStudent = (Student)LB.SelectedItem;            
+            StudentInfoWindow InfoWindow = new StudentInfoWindow();
+            InfoWindow.PopUpWindow(SelectedStudent);
+            InfoWindow.ShowDialog();
+            
         }
     }
 }

@@ -19,7 +19,7 @@
         <TextBox x:Name="TxtBxState" HorizontalAlignment="Left" Height="23" Margin="10,283,0,0" TextWrapping="Wrap" Text="Please Enter Your State" VerticalAlignment="Top" Width="181"/>
         <TextBox x:Name="TxtBxStreetName" HorizontalAlignment="Left" Height="23" Margin="10,255,0,0" TextWrapping="Wrap" Text="Please Enter Your Street Name" VerticalAlignment="Top" Width="181"/>
         <TextBox x:Name="TxtBxZipCode" HorizontalAlignment="Left" Height="23" Margin="10,339,0,0" TextWrapping="Wrap" Text="Please Enter Your Zip Code" VerticalAlignment="Top" Width="181"/>
-        <ListBox x:Name="LB" HorizontalAlignment="Left" Height="126" Margin="385,283,0,0" VerticalAlignment="Top" Width="397" SelectionChanged="LB_SelectionChanged"/>
+        <ListBox x:Name="LB" HorizontalAlignment="Left" Height="126" Margin="385,283,0,0" VerticalAlignment="Top" Width="397" SelectionChanged="LB_SelectionChanged" MouseDoubleClick="LB_MouseDoubleClick"/>
         <Button x:Name="BttnAddToLB" Content="Add" HorizontalAlignment="Left" Margin="39,367,0,0" VerticalAlignment="Top" Width="116" Height="46" Click="BttnAddToLB_Click"/>
 
     </Grid>

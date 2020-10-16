@@ -10,12 +10,8 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZInbHVOFGS8N4jysdeTMZz0yYrKLHK31f3g&amp;usqp=CAU"/>
         </Grid.Background>
-        <Label x:Name="LblStudentName" Content="LAST, FIRST" HorizontalAlignment="Left" Margin="314,10,0,0" VerticalAlignment="Top" Height="50" Width="178" Foreground="White" FontSize="24"/>
-        <Label x:Name="LblStreetNum" Content="StreetNum" HorizontalAlignment="Left" Margin="314,86,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White"/>
-        <Label x:Name="LblStreetName" Content="StreetName" HorizontalAlignment="Left" Margin="314,133,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
-        <Label x:Name="LblState" Content="State" HorizontalAlignment="Left" Margin="314,180,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White"/>
-        <Label x:Name="LblCity" Content="CITY" HorizontalAlignment="Left" Margin="314,237,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"/>
-        <Label x:Name="LblZip" Content="ZIP" HorizontalAlignment="Left" Margin="314,296,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White"/>
+        <Label x:Name="LblStudentName" Content="LAST, FIRST" HorizontalAlignment="Left" Margin="138,10,0,0" VerticalAlignment="Top" Height="92" Width="445" Foreground="White" FontSize="24"/>
+        <Label x:Name="LblAddressInfo" Content="Address..." HorizontalAlignment="Left" Margin="138,107,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" Height="171" Width="513"/>
 
     </Grid>
 </Window>

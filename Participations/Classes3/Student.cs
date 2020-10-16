@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classes3
 {
-    class Student
+    public class Student
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -19,14 +19,16 @@ namespace Classes3
             LastName = "";
             Major = "";
             GPA = 0;
-            Address = Address;
+            Address = new Address();
         }
         public Student(string firstName, string lastName, string major, double gpa)
         {
+            Address = new Address();
             FirstName = firstName;
             LastName = lastName;
             Major = major;
             GPA = gpa;
+            
         }
         public string CalculateDistinction()
         {
@@ -51,12 +53,12 @@ namespace Classes3
         }
         public void SetAddress(int streetNumber, string streetName, string state, string city, int zipcode)
         {
-            Address Addy1 = new Address();
-            Addy1.StreetNumber = streetNumber;
-            Addy1.StreetName = streetName;
-            Addy1.State = state;
-            Addy1.City = city;
-            Addy1.Zipcode = zipcode;
+            Address.StreetNumber = streetNumber;
+            Address.StreetName = streetName;
+            Address.State = state;
+            Address.City = city;
+            Address.Zipcode = zipcode;
+            
 
         }
         public override string ToString()

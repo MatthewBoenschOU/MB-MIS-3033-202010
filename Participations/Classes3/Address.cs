@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classes3
 {
-    class Address
+    public class Address
     {
         public int StreetNumber { get; set; }
 
