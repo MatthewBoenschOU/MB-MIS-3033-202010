@@ -6,17 +6,20 @@
 
 <h2>Details</h2>
 
+<div class="FrontPic">
+    <h3>Front Sprite</h3>
+    <img src="@Model.sprites.front_default" />
+</div>
+
+<div class="BackPic">
+    <h3>Back Sprite</h3>
+    <img src="@Model.sprites.back_default" />
+</div>
+
 <div>
     <h4>Stats</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Url)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Url)
-        </dd>
 
         <dt>
             @Html.DisplayNameFor(model => model.height)
