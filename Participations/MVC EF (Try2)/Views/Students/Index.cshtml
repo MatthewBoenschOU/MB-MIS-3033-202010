@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.FirstName)
@@ -21,11 +21,30 @@
             @Html.DisplayNameFor(model => model.FavoriteColor)
         </th>
         <th></th>
-    </tr>
+    </tr>*@
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
+<div class="container">
+    <div class="row">
+
+ 
+
+@foreach (var item in Model)
+{
+    @*<tr>*@
+
+        <div class="col-sm-3">
+
+            <div class="card" style="width: 18rem;">
+                @*<img src="..." class="card-img-top" alt="...">*@
+                <div class="card-body">
+                    <h5 class="card-title">@item.LastName, @item.FirstName - @item.StudentID</h5>
+                    <p class="card-text">Favorite Color - @item.FavoriteColor</p>
+                    @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                </div>
+            </div>
+        </div>
+
+    @*<td>
             @Html.DisplayFor(modelItem => item.FirstName)
         </td>
         <td>
@@ -35,9 +54,12 @@
             @Html.DisplayFor(modelItem => item.FavoriteColor)
         </td>
         <td>
-            @Html.ActionLink("Details", "Details", new { id=item.StudentID }) 
-        </td>
-    </tr>
+            @Html.ActionLink("Details", "Details", new { id = item.StudentID })
+        </td>*@
+    @*</tr>*@
 }
 
-</table>
+</div>
+</div>
+
+@*</table>*@
